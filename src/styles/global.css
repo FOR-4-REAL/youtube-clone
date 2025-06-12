@@ -25,6 +25,23 @@
   font-display: swap;
 }
 
+.screen-out {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  opacity: 0 !important;
+  z-index: -999 !important;
+}
+
+*:not(:disabled):focus-visible {
+  outline-width: 2px;
+  outline-color: #fff;  
+  outline-style: solid;
+}
+
 :root {
-  --background: #fff;
+  --brand: #c4302b;
+  --background: #181818;
+
+  --black-500: #212121;
 }

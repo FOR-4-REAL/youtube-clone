@@ -1,0 +1,153 @@
+.header {
+  position: relative;
+  background-color: var(--black-500);
+}
+
+.header::before {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  background-color: #353535;
+  content: '';
+}
+
+.header__wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  height: 6em;
+  box-sizing: border-box;
+}
+
+.header__section {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.header__menu-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem;
+  width: 2.4em;
+  height: 2.4em;
+  border-radius: 2.8rem;
+  box-sizing: border-box;
+}
+
+.header__search-form {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.header__search-input {
+  width: 32em;
+  height: 3.2em;
+  padding: 0.4rem 6.2rem 0.4rem 1.2rem;
+  background-color: #111;
+  border: 1px solid #353535;
+  border-right: 0;
+  border-radius: 0.4rem;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.header__search-button {
+  position: absolute;
+  right: 0;
+  height: 3.2em;
+  padding: 0.4rem 1.2rem;
+  box-sizing: border-box;
+  background-color: #313131;
+  border: 1px solid #353535;
+  border-top-right-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
+}
+
+.header__voice-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem 1.2rem;
+  width: 3.2em;
+  height: 3.2em;
+  background-color: #313131;
+  border-radius: 22rem;
+  box-sizing: border-box;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.header__voice-button:hover {
+  background-color: #383838;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.header__nav-link {
+  display: inline-block;
+  padding: 0.6rem 0.6rem;
+  border-radius: 2.4rem;
+  box-sizing: border-box;
+}
+
+.header__notification-button {
+  position: relative;
+  padding: 0.6rem 0.6rem;
+  border-radius: 2.4rem;
+}
+
+.header__notification-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #ff0000;
+  color: #fff;
+  width: 1.8rem;
+  height: 1.8rem;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  border-radius: 0.9rem;
+}
+
+.header__nav a,
+.header__notification-button {
+  transition: background-color 0.2s ease-in-out;
+}
+
+.header__nav a:hover,
+.header__nav a:focus-visible,
+.header__notification-button:hover,
+.header__notification-button:focus-visible,
+.header__menu-button:hover,
+.header__menu-button:focus-visible {
+  background-color: #3e3e3e;
+}
+
+.header__profile-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
+.header__menu-button > img,
+.header__search-button > img,
+.header__voice-button > img,
+.header__nav-link > img,
+.header__notification-button > img {
+  width: 2.4rem;
+  height: 2.4rem;
+}
