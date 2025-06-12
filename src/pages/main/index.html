@@ -37,5 +37,52 @@
     <meta property="og:image" content="/public/assets/images/icons/youtube-logo.svg" />
   </head>
   <body>
+    <header class="header">
+      <div class="header__wrapper">
+        <!-- 왼쪽 섹션 -->
+        <div class="header__section header__section-start">
+          <button class="header__menu-button" aria-label="사이드 메뉴 열기" title="사이드 메뉴 열기">
+            <img src="/public/assets/images/icons/hamburger-menu.svg" alt="" width="30" height="30" class="header__menu-icon" loading="lazy" />
+          </button>
+          <a href="/" class="header__logo" aria-label="홈으로 이동">
+            <img src="/public/assets/images/icons/youtube-logo.svg" alt="유튜브 로고" width="120" height="30" loading="lazy" />
+            <h1 class="screen-out">YouTube</h1>
+          </a>
+        </div>
+
+        <!-- 가운데 섹션 -->
+        <div class="header__section header__section-center">
+          <form action="#" class="header__search-form" role="search" aria-label="동영상 검색">
+            <input type="text" class="header__search-input" name="search" placeholder="Search..." aria-label="검색어 입력" />
+            <button type="submit" class="header__search-button" aria-label="검색">
+              <img src="/public/assets/images/icons/search.svg" alt="" width="30" height="30" loading="lazy" />
+            </button>
+          </form>
+          <button class="header__voice-button" aria-label="음성 검색">
+            <img src="/public/assets/images/icons/voice-search-icon.svg" alt="음성 검색" width="30" height="30" loading="lazy" />
+          </button>
+        </div>
+
+        <!-- 오른쪽 섹션 -->
+        <div class="header__section header__section-end">
+          <nav class="header__nav" aria-label="사이트 도구">
+            <h2 class="screen-out">사이트 메뉴</h2>
+            <a href="#" class="header__nav-link" aria-label="동영상 업로드">
+              <img src="/public/assets/images/icons/upload.svg" alt="업로드 아이콘" width="30" height="30" loading="lazy" />
+            </a>
+            <a href="#" class="header__nav-link" aria-label="YouTube 관련기능 모음">
+              <img src="/public/assets/images/icons/youtube-apps.svg" alt="관련기능 모음" width="30" height="30" loading="lazy" />
+            </a>
+          </nav>
+          <button class="header__notification-button" aria-label="알림 1개 있음">
+            <img src="/public/assets/images/icons/notifications.svg" alt="알림 아이콘" width="30" height="30" loading="lazy" />
+            <span class="header__notification-badge" aria-label="읽지 않은 알림 수">1</span>
+          </button>
+          <button class="header__profile-button" aria-label="내 프로필">
+            <img src="/public/assets/images/avatar-1.png" alt="내 프로필 사진" width="30" height="30" loading="lazy" />
+          </button>
+        </div>
+      </div>
+    </header>
   </body>
 </html>
