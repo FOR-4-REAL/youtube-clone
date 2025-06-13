@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="/src/styles/global.css" media="all" />
     <link rel="stylesheet" href="/src/styles/header.css" media="all" />
     <link rel="stylesheet" href="/src/styles/aside.css" media="all" />
+    <link rel="stylesheet" href="/src/styles/main.css" media="all" />
 
     <!-- 접근성: PWA 및 모바일 앱 메타 -->
     <meta name="theme-color" content="#c4302b" />
@@ -87,9 +88,6 @@
       </div>
     </header>
     <div>
-      <main>
-        <!-- 유뷰브 영상 목록 -->
-      </main>
       <aside class="sidebar" aria-label="사이드 메뉴">
         <nav class="sidebar__nav">
           <h2 class="sidebar__title screen-out">사이드 메뉴 리스트</h2>
@@ -133,7 +131,219 @@
             </li>
           </ul>
         </nav>
-      </aside>      
+      </aside> 
+
+      <main class="video-container">
+        <section>
+          <!-- 카드 1 -->
+          <article class="video-card" aria-label="아름다운풍경(1) 영상" role="link">
+            <div class="video-card__thumbnail">
+              <a href="#" class="video-card__thumbnail-link">
+                <img class="video-card__image" src="https://picsum.photos/id/11/350/220" alt="아름다운풍경(1) 썸네일" width="350" height="200" />
+                <span class="video-card__duration" aria-label="재생시간">3:45</span>
+              </a>
+            </div>
+            <div class="video-card__info">
+              <div class="video-card__channel-avatar">
+                <a href="#" class="video-card__channel-link" aria-label="아이디(1) 채널로 이동">
+                  <img class="video-card__avatar" src="/public/assets/images/avatar-1.png" alt="아이디(1) 채널 프로필" width="36" height="36" />
+                </a>
+              </div>
+              <div class="video-card__meta">
+                <a href="#" class="video-card__title-link" aria-label="아름다운풍경(1) 영상으로 이동">
+                  <h3 class="video-card__title">아름다운풍경(1)</h3>
+                </a>
+                <a href="#" class="video-card__channel-link" aria-label="아이디(1) 채널로 이동">
+                  <span class="video-card__channel-name">아이디(1)</span>
+                </a>
+                <span class="video-card__stats">조회수 3회 · 6개월 전</span>
+              </div>
+            </div>
+          </article>
+      
+          <!-- 카드 2 -->
+          <article class="video-card" aria-label="아름다운풍경(2) 영상" role="link">
+            <div class="video-card__thumbnail">
+              <a href="#" class="video-card__thumbnail-link">
+                <img class="video-card__image" src="https://picsum.photos/id/12/350/220" alt="아름다운풍경(2) 썸네일" width="350" height="200" />
+                <span class="video-card__duration" aria-label="재생시간">4:15</span>
+              </a>
+            </div>
+            <div class="video-card__info">
+              <div class="video-card__channel-avatar">
+                <a href="#" class="video-card__channel-link" aria-label="아이디(2) 채널로 이동">
+                  <img class="video-card__avatar" src="/public/assets/images/avatar-1.png" alt="아이디(2) 채널 프로필" width="36" height="36" />
+                </a>
+              </div>
+              <div class="video-card__meta">
+                <a href="#" class="video-card__title-link" aria-label="아름다운풍경(2) 영상으로 이동">
+                  <h3 class="video-card__title">아름다운풍경(2)</h3>
+                </a>
+                <a href="#" class="video-card__channel-link" aria-label="아이디(2) 채널로 이동">
+                  <span class="video-card__channel-name">아이디(2)</span>
+                </a>
+                <span class="video-card__stats">조회수 5회 · 4개월 전</span>
+              </div>
+            </div>
+          </article>
+      
+          <!-- 카드 3 -->
+          <article class="video-card" aria-label="아름다운풍경(3) 영상" role="link">
+            <div class="video-card__thumbnail">
+              <a href="#" class="video-card__thumbnail-link">
+                <img class="video-card__image" src="https://picsum.photos/id/13/350/220" alt="아름다운풍경(3) 썸네일" width="350" height="200" />
+                <span class="video-card__duration" aria-label="재생시간">2:30</span>
+              </a>
+            </div>
+            <div class="video-card__info">
+              <div class="video-card__channel-avatar">
+                <a href="#" class="video-card__channel-link" aria-label="아이디(3) 채널로 이동">
+                  <img class="video-card__avatar" src="/public/assets/images/avatar-1.png" alt="아이디(3) 채널 프로필" width="36" height="36" />
+                </a>
+              </div>
+              <div class="video-card__meta">
+                <a href="#" class="video-card__title-link" aria-label="아름다운풍경(3) 영상으로 이동">
+                  <h3 class="video-card__title">아름다운풍경(3)</h3>
+                </a>
+                <a href="#" class="video-card__channel-link" aria-label="아이디(3) 채널로 이동">
+                  <span class="video-card__channel-name">아이디(3)</span>
+                </a>
+                <span class="video-card__stats">조회수 8회 · 1개월 전</span>
+              </div>
+            </div>
+          </article>
+      
+          <!-- 카드 4 -->
+          <article class="video-card" aria-label="아름다운풍경(4) 영상" role="link">
+            <div class="video-card__thumbnail">
+              <a href="#" class="video-card__thumbnail-link">
+                <img class="video-card__image" src="https://picsum.photos/id/14/350/220" alt="아름다운풍경(4) 썸네일" width="350" height="200" />
+                <span class="video-card__duration" aria-label="재생시간">5:12</span>
+              </a>
+            </div>
+            <div class="video-card__info">
+              <div class="video-card__channel-avatar">
+                <a href="#" class="video-card__channel-link" aria-label="아이디(4) 채널로 이동">
+                  <img class="video-card__avatar" src="/public/assets/images/avatar-1.png" alt="아이디(4) 채널 프로필" width="36" height="36" />
+                </a>
+              </div>
+              <div class="video-card__meta">
+                <a href="#" class="video-card__title-link" aria-label="아름다운풍경(4) 영상으로 이동">
+                  <h3 class="video-card__title">아름다운풍경(4)</h3>
+                </a>
+                <a href="#" class="video-card__channel-link" aria-label="아이디(4) 채널로 이동">
+                  <span class="video-card__channel-name">아이디(4)</span>
+                </a>
+                <span class="video-card__stats">조회수 12회 · 2주 전</span>
+              </div>
+            </div>
+          </article>
+      
+          <!-- 카드 5 -->
+          <article class="video-card" aria-label="아름다운풍경(5) 영상" role="link">
+            <div class="video-card__thumbnail">
+              <a href="#" class="video-card__thumbnail-link">
+                <img class="video-card__image" src="https://picsum.photos/id/15/350/220" alt="아름다운풍경(5) 썸네일" width="350" height="200" />
+                <span class="video-card__duration" aria-label="재생시간">3:33</span>
+              </a>
+            </div>
+            <div class="video-card__info">
+              <div class="video-card__channel-avatar">
+                <a href="#" class="video-card__channel-link" aria-label="아이디(5) 채널로 이동">
+                  <img class="video-card__avatar" src="/public/assets/images/avatar-1.png" alt="아이디(5) 채널 프로필" width="36" height="36" />
+                </a>
+              </div>
+              <div class="video-card__meta">
+                <a href="#" class="video-card__title-link" aria-label="아름다운풍경(5) 영상으로 이동">
+                  <h3 class="video-card__title">아름다운풍경(5)</h3>
+                </a>
+                <a href="#" class="video-card__channel-link" aria-label="아이디(5) 채널로 이동">
+                  <span class="video-card__channel-name">아이디(5)</span>
+                </a>
+                <span class="video-card__stats">조회수 10회 · 1주 전</span>
+              </div>
+            </div>
+          </article>
+      
+          <!-- 카드 6 -->
+          <article class="video-card" aria-label="아름다운풍경(6) 영상">
+            <div class="video-card__thumbnail" role="link">
+              <a href="#" class="video-card__thumbnail-link">
+                <img class="video-card__image" src="https://picsum.photos/id/16/350/220" alt="아름다운풍경(6) 썸네일" width="350" height="200" />
+                <span class="video-card__duration" aria-label="재생시간">6:00</span>
+              </a>
+            </div>
+            <div class="video-card__info">
+              <div class="video-card__channel-avatar">
+                <a href="#" class="video-card__channel-link" aria-label="아이디(6) 채널로 이동">
+                  <img class="video-card__avatar" src="/public/assets/images/avatar-1.png" alt="아이디(6) 채널 프로필" width="36" height="36" />
+                </a>
+              </div>
+              <div class="video-card__meta">
+                <a href="#" class="video-card__title-link" aria-label="아름다운풍경(6) 영상으로 이동">
+                  <h3 class="video-card__title">아름다운풍경(6)</h3>
+                </a>
+                <a href="#" class="video-card__channel-link" aria-label="아이디(6) 채널로 이동">
+                  <span class="video-card__channel-name">아이디(6)</span>
+                </a>
+                <span class="video-card__stats">조회수 15회 · 3일 전</span>
+              </div>
+            </div>
+          </article>
+      
+          <!-- 카드 7 -->
+          <article class="video-card" aria-label="아름다운풍경(7) 영상" role="link">
+            <div class="video-card__thumbnail">
+              <a href="#" class="video-card__thumbnail-link">
+                <img class="video-card__image" src="https://picsum.photos/id/17/350/220" alt="아름다운풍경(7) 썸네일" width="350" height="200" />
+                <span class="video-card__duration" aria-label="재생시간">4:44</span>
+              </a>
+            </div>
+            <div class="video-card__info">
+              <div class="video-card__channel-avatar">
+                <a href="#" class="video-card__channel-link" aria-label="아이디(7) 채널로 이동">
+                  <img class="video-card__avatar" src="/public/assets/images/avatar-1.png" alt="아이디(7) 채널 프로필" width="36" height="36" />
+                </a>
+              </div>
+              <div class="video-card__meta">
+                <a href="#" class="video-card__title-link" aria-label="아름다운풍경(7) 영상으로 이동">
+                  <h3 class="video-card__title">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam dolores tenetur accusamus ullam</h3>
+                </a>
+                <a href="#" class="video-card__channel-link" aria-label="아이디(7) 채널로 이동">
+                  <span class="video-card__channel-name">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+                </a>
+                <span class="video-card__stats">조회수 18회 · 2일 전</span>
+              </div>
+            </div>
+          </article>
+      
+          <!-- 카드 8 -->
+          <article class="video-card" aria-label="아름다운풍경(8) 영상" role="link">
+            <div class="video-card__thumbnail">
+              <a href="#" class="video-card__thumbnail-link">
+                <img class="video-card__image" src="https://picsum.photos/id/18/350/220" alt="아름다운풍경(8) 썸네일" width="350" height="200" />
+                <span class="video-card__duration" aria-label="재생시간">3:21</span>
+              </a>
+            </div>
+            <div class="video-card__info">
+              <div class="video-card__channel-avatar">
+                <a href="#" class="video-card__channel-link" aria-label="아이디(8) 채널로 이동">
+                  <img class="video-card__avatar" src="/public/assets/images/avatar-1.png" alt="아이디(8) 채널 프로필" width="36" height="36" />
+                </a>
+              </div>
+              <div class="video-card__meta">
+                <a href="#" class="video-card__title-link" aria-label="아름다운풍경(8) 영상으로 이동">
+                  <h3 class="video-card__title">아름다운풍경(8)</h3>
+                </a>
+                <a href="#" class="video-card__channel-link" aria-label="아이디(8) 채널로 이동">
+                  <span class="video-card__channel-name">아이디(8)</span>
+                </a>
+                <span class="video-card__stats">조회수 22회 · 1일 전</span>
+              </div>
+            </div>
+          </article>
+        </section>
+      </main>
     </div>
   </body>
 </html>
