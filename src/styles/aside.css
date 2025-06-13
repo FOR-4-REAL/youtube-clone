@@ -1,0 +1,81 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 8.8em;
+  height: 100dvh;
+  background-color: var(--black-500);
+}
+.sidebar__nav {
+  padding-top: 6em;
+}
+
+.sidebar__list {
+  padding-top: 28px;
+}
+
+.sidebar__link {
+  display: block;
+  margin-bottom: 24px;
+  opacity: 0.6;
+  transition: opacity 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.sidebar__link:focus-visible {
+  outline: none;
+  opacity: 1;
+}
+
+.sidebar__link:hover {
+  opacity: 1;
+}
+
+.sidebar__link.isActive {
+  opacity: 1;
+}
+
+.sidebar__icon {
+  width: 2.8rem;
+  height: 2.8rem;
+  margin-bottom: 8px;
+  box-sizing: border-box;
+}
+
+.icon-home {
+  width: 100%;
+  background: url('/public/assets/images/icons/home.svg') no-repeat center center;
+}
+
+.icon-explore {
+  width: 100%;
+  background: url('/public/assets/images/icons/explore.svg') no-repeat center center;
+}
+
+.icon-subscriptions {
+  width: 100%;
+  background: url('/public/assets/images/icons/subscriptions.svg') no-repeat center center;
+}
+
+.icon-originals {
+  width: 100%;
+  background: url('/public/assets/images/icons/originals.svg') no-repeat center center;
+}
+
+.icon-music {
+  width: 100%;
+  background: url('/public/assets/images/icons/youtube-music.svg') no-repeat center center;
+}
+
+.icon-library {
+  width: 100%;
+  background: url('/public/assets/images/icons/library.svg') no-repeat center center;
+}
+
+.sidebar__text {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #fff;
+}

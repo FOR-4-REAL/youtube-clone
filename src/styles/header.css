@@ -1,6 +1,10 @@
 .header {
-  position: relative;
+  position: sticky;
+  left: 0;
+  right: 0;
+  top: 0;
   background-color: var(--black-500);
+  z-index: 1;
 }
 
 .header::before {
@@ -33,6 +37,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 0.8rem;
   padding: 1.2rem;
   width: 2.4em;
   height: 2.4em;

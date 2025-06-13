@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="/src/styles/normalize.css" media="all" />
     <link rel="stylesheet" href="/src/styles/global.css" media="all" />
     <link rel="stylesheet" href="/src/styles/header.css" media="all" />
+    <link rel="stylesheet" href="/src/styles/aside.css" media="all" />
 
     <!-- 접근성: PWA 및 모바일 앱 메타 -->
     <meta name="theme-color" content="#c4302b" />
@@ -85,5 +86,54 @@
         </div>
       </div>
     </header>
+    <div>
+      <main>
+        <!-- 유뷰브 영상 목록 -->
+      </main>
+      <aside class="sidebar" aria-label="사이드 메뉴">
+        <nav class="sidebar__nav">
+          <h2 class="sidebar__title screen-out">사이드 메뉴 리스트</h2>
+      
+          <ul class="sidebar__list">
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link isActive" aria-label="홈으로 이동">
+                <div class="sidebar__icon icon-home" aria-hidden="true"></div>
+                <span class="sidebar__text">Home</span>
+              </a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link" aria-label="탐색으로 이동">
+                <div class="sidebar__icon icon-explore" aria-hidden="true"></div>
+                <span class="sidebar__text">Explore</span>
+              </a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link" aria-label="구독영상으로 이동">
+                <div class="sidebar__icon icon-subscriptions" aria-hidden="true"></div>
+                <span class="sidebar__text">Subscriptions</span>
+              </a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link" aria-label="오리지널로 이동">
+                <div class="sidebar__icon icon-originals" aria-hidden="true"></div>
+                <span class="sidebar__text">Originals</span>
+              </a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link" aria-label="유튜브뮤직으로 이동">
+                <div class="sidebar__icon icon-music" aria-hidden="true"></div>
+                <span class="sidebar__text">Youtube Music</span>
+              </a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link" aria-label="라이브러리로 이동">
+                <div class="sidebar__icon icon-library" aria-hidden="true"></div>
+                <span class="sidebar__text">Library</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>      
+    </div>
   </body>
 </html>
